@@ -1,3 +1,25 @@
+import { useEffect, useState } from 'react';
+
+import PostCard from './PostCard';
+
 export function Home() {
-    return <h1>Home</h1>
+
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        fetch("/posts")
+          .then((r) => r.json())
+          .then(setPosts);
+      }, []);
+
+      console.log(posts)
+
+      const postCards = posts.map((post) => (
+        <PostCard
+        key={post.id}
+        post={post}
+        />
+      ))
+
+    return <div>{postCards}</div>
 }
