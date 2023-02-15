@@ -1,3 +1,3 @@
 export function Friends() {
-    return <h1>Friends & Haters:</h1>
+    return <h1>Friends & Followers</h1>
 }

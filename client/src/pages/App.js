@@ -1,12 +1,25 @@
 import { Link, Route, Routes } from "react-router-dom";
-import { Home } from './pages/Home';
-import { Friends } from './pages/Friends';
-import { Inbox } from './pages/Inbox';
-import { Login } from './pages/Login';
-import { Profile } from './pages/Profile';
-import { Feed } from './pages/Feed';
+import { Home } from './Home';
+import { Friends } from './Friends';
+import { Inbox } from './Inbox';
+import { Login } from './Login';
+import { Profile } from './Profile';
+import { Feed } from './Feed';
+import { useEffect, useState } from 'react';
 
 function App() {
+  
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    fetch("/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
+
+
   return (
     <>
     <nav>
@@ -25,7 +38,7 @@ function App() {
       <Route path='/feed' element={<Feed />} />
       <Route path='/friends' element={<Friends />} />
       <Route path='/inbox' element={<Inbox />} />
-      <Route path='/login' element={<Login />} />
+      <Route path='/login' element={<Login setUser={setUser} />} />
       <Route path='/profile' element={<Profile />} />
     </Routes>
     </>

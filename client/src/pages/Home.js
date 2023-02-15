@@ -21,5 +21,8 @@ export function Home() {
         />
       ))
 
-    return <div>{postCards}</div>
+    return <>
+    <h1>Home</h1>
+    <div>{postCards}</div>
+    </>
 }
