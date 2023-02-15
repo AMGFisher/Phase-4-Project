@@ -10,8 +10,15 @@ Rails.application.routes.draw do
 
   get "/me", to: "users#me"
 
+
   post "/signup", to: "users#create"
 
+  delete "/logout", to: "sessions#destroy"
+
+  get "/followers", to: "users#followers"
+  get "/following", to: "users#following"
+
+  get "/feed", to: "posts#feed"
 
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!

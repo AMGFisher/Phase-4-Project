@@ -20,7 +20,7 @@ function PostCard({ post }) {
     <div className="card">
       <img src={post.image} />
       <h3>{post.caption}</h3>
-      <h5>{post.user.handle}</h5>
+      <h5>@{post.user.handle}</h5>
       <p>{post.likes} Likes</p>
       <p>{post.dislikes} Dislikes</p>
       <button className="like-btn">
