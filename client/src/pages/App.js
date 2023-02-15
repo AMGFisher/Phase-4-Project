@@ -5,6 +5,7 @@ import { Inbox } from './Inbox';
 import { Login } from './Login';
 import { Profile } from './Profile';
 import { Feed } from './Feed';
+import { Signup } from './Signup';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <li><Link to='/inbox'>Inbox</Link></li>
         <li><Link to='/profile'>Profile</Link></li>
         <li><Link to='/login'>Login</Link></li>
+        <li><Link to='/signup'>Signup</Link></li>
 
       </ul>
     </nav>
@@ -38,8 +40,9 @@ function App() {
       <Route path='/feed' element={<Feed />} />
       <Route path='/friends' element={<Friends />} />
       <Route path='/inbox' element={<Inbox />} />
-      <Route path='/login' element={<Login setUser={setUser} />} />
       <Route path='/profile' element={<Profile />} />
+      <Route path='/login' element={<Login setUser={setUser} />} />
+      <Route path='/signup' element={<Signup setUser={setUser} />} />
     </Routes>
     </>
   )
