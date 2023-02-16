@@ -7,6 +7,7 @@ import { Profile } from './Profile';
 import { Feed } from './Feed';
 import { Signup } from './Signup';
 import { useEffect, useState } from 'react';
+import { NewPost } from './NewPost';
 
 function App() {
   
@@ -39,6 +40,7 @@ function App() {
       <button onClick={handleLogout}>Logout</button>
       <ul>
         <li><Link to='/'>Home</Link></li>
+        <li><Link to='/newpost'>Create New Post</Link></li>
         <li><Link to='/feed'>Personal Feed</Link></li>
         <li><Link to='/friends'>Friends</Link></li>
         <li><Link to='/inbox'>Inbox</Link></li>
@@ -57,7 +59,9 @@ function App() {
     </nav>
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/newpost' element={<NewPost />} />
       <Route path='/feed' element={<Feed user={user} />} />
+      
       <Route path='/friends' element={<Friends user={user} />} />
       <Route path='/inbox' element={<Inbox user={user} />} />
       <Route path='/profile' element={<Profile user={user} />} />

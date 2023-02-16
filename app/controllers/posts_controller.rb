@@ -22,6 +22,17 @@ class PostsController < ApplicationController
         render json: post
     end
 
+    def create
+        post = @current_user.posts.create!(post_params)
+        render json: post ,status: :created
+    end
+
+    private
+
+    def post_params
+        params.permit(:image, :caption, :likes, :dislikes)
+    end
+
 
 
 

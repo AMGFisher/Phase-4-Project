@@ -133,3 +133,40 @@ Post.find(50).update!(image: "https://i.ibb.co/xHP86gN/File-50.jpg")
 
 
 puts "Done seeding!"
+
+
+
+
+
+
+# User.find(1).update(avatar: "https://i.ibb.co/HHghBTB/File-1.jpg" )
+#   User.find(2).update(avatar: "https://i.ibb.co/Jd5vLXF/File-2.jpg" )
+#   User.find(3).update(avatar: "https://i.ibb.co/StZnXTx/File-3.jpg" )
+#   User.find(4).update(avatar: "https://i.ibb.co/sw4w3d6/File-4.jpg" )
+#   User.find(5).update(avatar: "https://i.ibb.co/kG804Fh/File-5.jpg" )
+#   User.find(6).update(avatar: "https://i.ibb.co/ScW8wsG/File-6.jpg" )
+#   User.find(7).update(avatar: "https://i.ibb.co/wpt466v/File-7.jpg" )
+#   User.find(8).update(avatar: "https://i.ibb.co/XDnGQBR/File-8.jpg" )
+#   User.find(9).update(avatar: "https://i.ibb.co/zHYnmtf/File-9.jpg" )
+#   User.find(10).update(avatar: "https://i.ibb.co/6YN7NZ6/File-10.jpg")
+#   User.find(11).update(avatar: "https://i.ibb.co/Qbbd8Xd/File-11.jpg")
+#   User.find(12).update(avatar: "https://i.ibb.co/zP7F6pL/File-12.jpg")
+#   User.find(13).update(avatar: "https://i.ibb.co/2K4pyD6/File-13.jpg")
+#   User.find(14).update(avatar: "https://i.ibb.co/zN8rNjW/File-14.jpg")
+#   User.find(15).update(avatar: "https://i.ibb.co/WpjctJk/File-15.jpg")
+#   User.find(16).update(avatar: "https://i.ibb.co/Qp1XCsc/File-16.jpg")
+#   User.find(17).update(avatar: "https://i.ibb.co/yy2kNRd/File-17.jpg")
+#   User.find(18).update(avatar: "https://i.ibb.co/WWwx8NQ/File-18.jpg")
+#   User.find(19).update(avatar: "https://i.ibb.co/FXVLvG6/File-19.jpg")
+#   User.find(20).update(avatar: "https://i.ibb.co/G34J7v4/File-20.jpg")
+#   User.find(21).update(avatar: "https://i.ibb.co/fxWnqmw/File-21.jpg")
+#   User.find(22).update(avatar: "https://i.ibb.co/DWrF4TM/File-22.jpg")
+#   User.find(23).update(avatar: "https://i.ibb.co/3d7VXCV/File-23.jpg")
+#   User.find(24).update(avatar: "https://i.ibb.co/P9FbCSv/File-24.jpg")
+#   User.find(25).update(avatar: "https://i.ibb.co/CVVPd5V/File-25.jpg")
+
+  User.find(1).update(email: "1@1.com")
+  User.find(2).update(email: "2@2.com")
+  User.find(3).update(email: "3@3.com")
+  User.find(4).update(email: "4@4.com")
+  User.find(5).update(email: "5@5.com")
