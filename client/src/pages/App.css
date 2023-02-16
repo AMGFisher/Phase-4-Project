@@ -15,6 +15,7 @@
 .preLogHome:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .login{
@@ -34,6 +35,7 @@
 .login:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .signup{
@@ -53,6 +55,7 @@
 .signup:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .intro {
@@ -73,130 +76,144 @@ height:50px;
 }
 .logoutBtn {
   margin-right: 5px;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   font-style: italic;
   background-color: white;
   color: black;
   border: 3px solid #cb6544f5;
   transition-duration: 0.3s;
   border-radius: 10px;
-   color: #cb6544f5;
+  color: #cb6544f5;
+  font-size: 20px; 
 }
 
 .logoutBtn:hover {
   background-color: #cb6544f5;
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .homeBtn{
   margin-left: 90px;
   margin-right: 5px;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   font-style: italic;
   background-color: white;
   color: black;
   border: 3px solid #4CAF50; /* Green */
   transition-duration: 0.3s;
   border-radius: 10px;
-   color: #4CAF50;
+  color: #4CAF50;
+  font-size: 20px;
 }
 
 .homeBtn:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .creatPostBtn {
   margin-right: 5px;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   font-style: italic;
   background-color: white;
   color: black;
   border: 3px solid #4CAF50; /* Green */
   transition-duration: 0.3s;
   border-radius: 10px;
-   color: #4CAF50;
+  color: #4CAF50;
+  font-size: 20px;
 }
 
 .creatPostBtn:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .personalFeedBtn {
   margin-right: 5px;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   font-style: italic;
   background-color: white;
   color: black;
   border: 3px solid #4CAF50; /* Green */
   transition-duration: 0.3s;
   border-radius: 10px;
-   color: #4CAF50;
+  color: #4CAF50;
+  font-size: 20px;
 }
 
 .personalFeedBtn:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .friendsBtn {
   margin-right: 5px;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   font-style: italic;
   background-color: white;
   color: black;
   border: 3px solid #4CAF50; /* Green */
   transition-duration: 0.3s;
   border-radius: 10px;
-   color: #4CAF50;
+  color: #4CAF50;
+  font-size: 20px;
 }
 
 .friendsBtn:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .inboxBtn {
   margin-right: 5px;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   font-style: italic;
   background-color: white;
   color: black;
   border: 3px solid #4CAF50; /* Green */
   transition-duration: 0.3s;
   border-radius: 10px;
-   color: #4CAF50;
+  color: #4CAF50;
+  font-size: 20px;
 }
 
 .inboxBtn:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .profileBtn {
   margin-right: 5px;
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   font-style: italic;
   background-color: white;
   color: black;
   border: 3px solid #4CAF50; /* Green */
   transition-duration: 0.3s;
   border-radius: 10px;
-   color: #4CAF50;
+  color: #4CAF50;
+  font-size: 20px;
 
 }
 
 .profileBtn:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
 }
 
 .friends {
@@ -238,7 +255,7 @@ height:50px;
   margin-left: 310px;
   margin-right: auto;
   width: 60%;
-   border-radius: 5px;
+  border-radius: 5px;
 }
 
 .avatar {
@@ -247,7 +264,7 @@ height:50px;
 }
 
 .userHandle {
-  float: left;
+  float: left;  
   font-weight: bold;
 }
 
@@ -302,7 +319,7 @@ height:50px;
 .likes {
   float: right;
   margin-bottom: 40px;
-  margin-right: 250px;
+  margin-right: 500px;
   font-style: italic;
   color: rgb(108, 108, 108);
 }
