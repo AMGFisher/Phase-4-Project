@@ -30,7 +30,7 @@ export function Signup({ setUser }) {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }
-    });
+    })
   }
 
   return (

@@ -8,20 +8,32 @@ export function Friends({user}) {
 
     let following = user.following
 
-    const followersCards = followers.map((follower) => (
-        <div>{follower.first_name}</div>
+    const followingCards = following.map((follow) => (
+        <>
+        <img src={follow.avatar} />
+        <div>{follow.first_name} {follow.last_name}</div>
+        <button>Unfollow</button>
+        <br/>
+        </>
     ))
 
-    const followingCards = following.map((follow) => (
-        <div>{follow.first_name}</div>
+    const followersCards = followers.map((follower) => (
+        <>
+        <img src={follower.avatar} />
+        <div>{follower.first_name} {follower.last_name}</div>
+        </>
     ))
 
     return <>
     <h1>Friends & Followers</h1>
-    <div>{followersCards}</div>
     <hr/>
+    <h2>People You Follow:</h2>
     <div>{followingCards}</div>
+    <hr/>
+    <h2>Followers:</h2>
+<div>{followersCards}</div>
     </>
 
     
 }
+
