@@ -29,9 +29,9 @@ export function Friends({user}) {
     ))
 
     return <>
-    <h1>Friends & Followers</h1>
+    <h1 className="ff-title">Friends & Followers</h1>
     <hr/>
-    <h2>People You Follow:</h2>
+    <h2 className="ff-title" >People You Follow:</h2>
     <div>{followingCards}</div>
     <hr/>
     <h2>Followers:</h2>
