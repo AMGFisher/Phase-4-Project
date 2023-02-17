@@ -3,8 +3,9 @@ function ProfilePostCard({ post }) {
 
   
     return (
-      <div className="postCard">
-        <img src={post.image} />
+      <div className="postProfile">
+        <img className="profileImage" src={post.image} />
+        <div className="postInfo"></div>
         <p>{post.likes} Likes</p>
         <p>{post.dislikes} Dislikes</p>
         <button className="like-btn">
