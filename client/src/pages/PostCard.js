@@ -40,19 +40,19 @@ const { id, image, caption, likes, dislikes, user } = post
 
   return (
     <div className="card">
-      <img src={image} />
-      <h3>{caption}</h3>
-      <img src={user.avatar} />  
-      <h5>@{user.handle}</h5>    
-      <p>{likes} Likes</p>
-      <p>{dislikes} Dislikes</p>
+      <img src={user.avatar} className="avatar" />
+      <h5 className="userHandle">@{user.handle}</h5>    
+      <img src={image} className="postImage" />
       <button className="like-btn" onClick={handleLikeClick}>
-      👍
+      like
       </button>
-      
-      <button className="like-btn" onClick={handleDislikeClick}>
-      👎
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+      <button className="Dis-like-btn" onClick={handleDislikeClick}>
+      Dislike
       </button>
+      <p className="likes">{likes} Likes</p>
+      <p className="disLikes">{dislikes} Dislikes</p>
+      <h3 className="caption">{user.handle} - {caption}</h3>
     </div>
   )
 
