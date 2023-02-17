@@ -22,7 +22,7 @@ export function Login({ setUser }) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <h1>Login</h1>
+        <h1 className="create-title">Login</h1>
         <div>
         <label classname="top"
         htmlFor="email" className="input-caption">Email: </label>
@@ -41,7 +41,7 @@ export function Login({ setUser }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Login</button>
+        <button type="submit" className="postBtn">Login</button>
         </div> 
         </form>
     </div>

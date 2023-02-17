@@ -19,10 +19,10 @@ export function Profile({ user }) {
     ))
 
     return ( <>
-    <h1>Profile</h1>
-    <h2>Handle: @{user.handle}</h2>
-    <h3>Name: {user.first_name} {user.last_name}</h3>
-    <h4>Contact: {user.email}</h4>
+    <h1 className="create-title">Profile</h1>
+    <h2 className="create-title">Handle: @{user.handle}</h2>
+    <h3 className="create-title">Name: {user.first_name} {user.last_name}</h3>
+    <h4 className="create-title">Contact: {user.email}</h4>
     <div>{profilePostCards}</div>
     </>
     )
