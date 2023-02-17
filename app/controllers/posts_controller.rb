@@ -8,14 +8,21 @@ class PostsController < ApplicationController
         render json: posts
     end
 
-    def feed
+    # def feed
         
-        followee = @current_user.following.all.map do |t|
-        byebug
-        end
-        render json: followee
+    #     feed = Post.all.where(user: @current_user)
+        
+    #     render json: feed
     
+    # end
+
+    def feed
+        feed = Post.all.order(created_at: :desc).filter { |post| @current_user.following_ids.include?(post.user.id) }
+
+        render json: feed
     end
+
+
 
     def show
         post = Post.find(params[:id])
