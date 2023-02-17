@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import FeedCard from './PostCard';
 
-export function Feed() {
+export function Feed({setFriendProfile}) {
 
     const [posts, setPosts] = useState([]);
 
@@ -18,6 +18,7 @@ export function Feed() {
         <FeedCard
         key={post.id}
         post={post}
+        setFriendProfile={setFriendProfile}
         />
       ))
 
