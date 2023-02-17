@@ -1,3 +1,3 @@
 export function Inbox() {
-    return <h1>Inbox</h1>
+    return <h1 className="inbox-title">Inbox</h1>
 }

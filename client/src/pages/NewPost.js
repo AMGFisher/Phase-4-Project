@@ -38,23 +38,23 @@ export function NewPost() {
     
         
     return <>
-    <h1>Create New Post</h1>
+    <h1 className="create-title">Create New Post</h1>
             <form onSubmit={handleSubmit}>
-            <label htmlFor="image">Image: </label>
-            <input
+            <label htmlFor="image" className="input-caption">Image: </label>
+            <input className="input"
               type="text"
               id="image"
               value={image}
               onChange={(e) => setImage(e.target.value)}
             />
-            <label htmlFor="caption">Caption: </label>
-            <input
+            <label htmlFor="caption" className="input-caption">Caption: </label>
+            <input className="input"
               type="text"
               id="caption"
               value={caption}
               onChange={(e) => setCaption(e.target.value)}
             />
-            <button type="submit">Create New Post</button>
+            <button className="postBtn" type="submit">Create New Post</button>
         </form>
         </>
 }

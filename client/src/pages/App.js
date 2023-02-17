@@ -40,12 +40,12 @@ function App() {
       <img className="logo" src='/PFSLogo.png' width="10%"/>
       {user ? <> <h3 className="welcome">Welcome, {user.first_name}!</h3>
       <div className="taskBar">
-        <button className="homeBtn"><Link to='/'>Home</Link></button>
-        <button className="creatPostBtn"><Link to='/newpost'>Post</Link></button>
-        <button className="personalFeedBtn"><Link to='/feed'>Feed</Link></button>
-        <button className="friendsBtn"><Link to='/friends'>Friends</Link></button>
-        <button className="inboxBtn"><Link to='/inbox'>Inbox</Link></button>
-        <button className="profileBtn"><Link to='/profile'>Profile</Link></button>
+        <button className="homeBtn"><Link className="link-text" to='/'>Home</Link></button>
+        <button className="personalFeedBtn"><Link className="link-text" to='/feed'>Feed</Link></button>
+        <button className="creatPostBtn"><Link className="link-text" to='/newpost'>Post</Link></button>
+        <button className="friendsBtn"><Link className="link-text" to='/friends'>Friends</Link></button>
+        <button className="inboxBtn"><Link className="link-text" to='/inbox'>Inbox</Link></button>
+        <button className="profileBtn"><Link className="link-text" to='/profile'>Profile</Link></button>
         <button className="logoutBtn" onClick={handleLogout}>Logout</button>
         </div>
         
@@ -54,9 +54,9 @@ function App() {
         <li><Link to='/signup'>Signup</Link></li> */}
         
      </> : <> <h3 className="intro">Welcome! Browse, Login, or Signup to Continue:</h3>
-      <button className="preLogHome"><Link to='/'>Home</Link></button>
-      <button className="login"><Link to='/login'>Login</Link></button>
-        <button className="signup"><Link to='/signup'>Signup</Link></button>
+      <button className="preLogHome"><Link className="link-text" to='/'>Home</Link></button>
+      <button className="login"><Link className="link-text" to='/login'>Login</Link></button>
+        <button className="signup"><Link className="link-text" to='/signup'>Signup</Link></button>
       </>
       }
     </nav>
