@@ -70,11 +70,15 @@ export function Profile() {
     ))
 
     return ( <>
-    <h1>Profile</h1>
-    <h2>Handle: @{me.handle}</h2>
-    <h3>Name: {me.first_name} {me.last_name}</h3>
-    <h4>Contact: {me.email}</h4>
+
+    <div className="profile-page">   
+    <h1 className="create-title">Profile</h1>
+    <h2 className="create-title">Handle: @{me.handle}</h2>
+    <h3 className="create-title">Name: {me.first_name} {me.last_name}</h3>
+    <h4 className="create-title">Contact: {me.email}</h4>
+
     <div>{profilePostCards}</div>
+    </div>
     </>
     )
 }

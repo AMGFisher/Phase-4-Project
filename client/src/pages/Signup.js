@@ -42,11 +42,11 @@ export function Signup({ setUser }) {
 
   return (
     <>
-    <h1>Sign Up</h1>
+    <h1 className="create-title">Sign Up</h1>
     <div classname="signup">
       <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email: </label>
-        <input
+      <label htmlFor="email" className="input-caption">Email: </label>
+        <input className="input"
           type="text"
           id="email"
           autoComplete="off"
@@ -54,8 +54,8 @@ export function Signup({ setUser }) {
           onChange={(e) => setEmail(e.target.value)}
         />
         <br />
-        <label htmlFor="password">Password: </label>
-        <input
+        <label htmlFor="password" className="input-caption">Password: </label>
+        <input className="input"
           type="password"
           id="password"
           value={password}
@@ -63,8 +63,8 @@ export function Signup({ setUser }) {
           autoComplete="current-password"
         />
         <br />
-        <label htmlFor="password">Password Confirmation: </label>
-        <input
+        <label htmlFor="password" className="input-caption">Password Confirmation: </label>
+        <input className="input"
           type="password"
           id="password_confirmation"
           value={passwordConfirmation}
@@ -75,8 +75,8 @@ export function Signup({ setUser }) {
         <br />
 
       
-        <label htmlFor="first">First Name: </label>
-        <input
+        <label htmlFor="first" className="input-caption">First Name: </label>
+        <input className="input"
           type="text"
           id="first"
           autoComplete="off"
@@ -85,8 +85,8 @@ export function Signup({ setUser }) {
         />
         <br />
 
-        <label htmlFor="last">Last Name: </label>
-        <input
+        <label htmlFor="last" className="input-caption">Last Name: </label>
+        <input className="input"
           type="text"
           id="last"
           autoComplete="off"
@@ -95,8 +95,8 @@ export function Signup({ setUser }) {
         />
         <br />
 
-        <label htmlFor="handle">Creative Social Media Handle: </label>
-        <input
+        <label htmlFor="handle" className="input-caption">Creative Social Media Handle: </label>
+        <input className="input"
           type="text"
           id="handle"
           autoComplete="off"
@@ -105,7 +105,7 @@ export function Signup({ setUser }) {
         />
         <br />
 
-        <button type="submit">Sign Up</button>
+        <button type="submit" className="postBtn">Sign Up</button>
       </form>
     </div>
     </>
