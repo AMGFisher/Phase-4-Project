@@ -8,11 +8,11 @@ function ProfilePostCard({ post }) {
         <p>{post.likes} Likes</p>
         <p>{post.dislikes} Dislikes</p>
         <button className="like-btn">
-        👍
+        like
         </button>
         
-        <button className="like-btn">
-        👎
+        <button className="Dis-like-btn">
+        Dislike
         </button>
         <h3>{post.caption}</h3>
       </div>
