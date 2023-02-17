@@ -52,7 +52,7 @@ const { id, image, caption, likes, dislikes, user } = post
       </button>
       <p className="likes">{likes} Likes</p>
       <p className="disLikes">{dislikes} Dislikes</p>
-      <h3 className="caption">{user.handle} - {caption}</h3>
+      <h3 className="caption">{caption}</h3>
     </div>
   )
 
