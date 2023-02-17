@@ -10,6 +10,7 @@ export function Friends({user}) {
 
     const followingCards = following.map((follow) => (
         <container className="friends">
+
         <img src={follow.avatar} />
         <div>{follow.first_name} {follow.last_name}</div>
         <button>Unfollow</button>
@@ -19,6 +20,7 @@ export function Friends({user}) {
 
     const followersCards = followers.map((follower) => (
         <container className="followers">
+
         <img src={follower.avatar} />
         <div>{follower.first_name} {follower.last_name}</div>
         </container>

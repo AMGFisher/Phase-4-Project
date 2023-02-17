@@ -35,9 +35,10 @@ function App() {
 
   return (
     <>
-    <nav>
+    <nav className="navBar">
+      <img src="/PFSLogo.png" width="10%"/>
       {user ? <> <h3>Welcome, {user.first_name}!</h3>
-      <button onClick={handleLogout}>Logout</button>
+      <button ClassName="logoutbtn" onClick={handleLogout}>Logout</button>
       <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/newpost'>Create New Post</Link></li>

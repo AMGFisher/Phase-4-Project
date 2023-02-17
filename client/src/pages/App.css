@@ -23,6 +23,93 @@
   
 }
 
-.top {
-  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif
+.homePageTitle {
+ margin-left: 100px;
+}
+
+.postCard > .card {
+  margin-bottom: 0px;
+  border: 3px solid rgba(118, 115, 115, 0.852);
+  border-radius: 10px;
+}
+
+.postImage {
+  display: block;
+  margin-left: 310px;
+  margin-right: auto;
+  width: 60%;
+   border-radius: 5px;
+}
+
+.avatar {
+  float: left;
+  margin-left: 75px;
+}
+
+.userHandle {
+  float: left;
+  font-weight: bold;
+}
+
+.caption {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  font-size: 23px;
+  font-style: italic;
+  font-weight: normal;
+  font-family:'Lucida Sans', sans-serif
+}
+
+.like-btn {
+   margin-top: 8px;
+  margin-left: 310px;
+  margin-right: 5px;
+  width: 60px;
+  height: 40px;
+  font-style: italic;
+  background-color: white;
+  color: black;
+  border: 3px solid #4CAF50; /* Green */
+  transition-duration: 0.3s;
+  border-radius: 10px;
+   color: #4CAF50;
+}
+
+.like-btn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.Dis-like-btn{
+  margin-top: 8px;
+   width: 60px;
+   height: 40px;
+   font-style: italic;
+   background-color: white;
+  color: black;
+  border: 3px solid rgba(250, 54, 54, 0.932); /* Green */
+  transition-duration: 0.3s;
+  border-radius: 10px;
+  color:rgba(250, 54, 54, 0.932);
+}
+
+.Dis-like-btn:hover {
+  background-color: rgba(250, 54, 54, 0.932); /* Red */
+  color: white;
+}
+
+.likes {
+  float: right;
+  margin-bottom: 40px;
+  margin-right: 250px;
+  font-style: italic;
+  color: rgb(108, 108, 108);
+}
+
+.disLikes {
+  float: right;
+  margin-right: 20px;
+  font-style: italic;
+  color: rgb(108, 108, 108);
 }

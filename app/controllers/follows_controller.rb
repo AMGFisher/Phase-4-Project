@@ -1,8 +1,10 @@
 class FollowsController < ApplicationController
 
+
     def index
-        follows = Follow.all
-        render json: follows
+        following = Follow.where(follower_id: @current_user.id)
+
+        render json: following
     end
 
     def show
@@ -11,3 +13,4 @@ class FollowsController < ApplicationController
     end
 
 end
+

@@ -1,25 +1,10 @@
 function ProfilePostCard({ post }) {
 
-    // console.log(post)
-  
-    // return (
-    //   <div className="card">
-    //     <h2>{post.image}</h2>
-    //     <img src={image} alt={name} className="toy-avatar" />
-    //     <p>{likes} Likes </p>
-    //     <button className="like-btn" onClick={handleLikeClick}>
-    //       Like {"<3"}
-    //     </button>
-    //     <button className="del-btn" onClick={handleDeleteClick}>
-    //       Donate to GoodWill
-    //     </button>
-    //   </div>
-    // );
+
   
     return (
-      <div className="card">
+      <div className="postCard">
         <img src={post.image} />
-        <h3>{post.caption}</h3>
         <p>{post.likes} Likes</p>
         <p>{post.dislikes} Dislikes</p>
         <button className="like-btn">
@@ -29,6 +14,7 @@ function ProfilePostCard({ post }) {
         <button className="like-btn">
         👎
         </button>
+        <h3>{post.caption}</h3>
       </div>
     )
   

@@ -22,7 +22,7 @@ export function Home() {
       ))
 
     return <>
-    <h1>Home</h1>
-    <div>{postCards}</div>
+    <h1 className="homePageTitle">Home</h1>
+    <div className='postCard'>{postCards}</div>
     </>
 }
