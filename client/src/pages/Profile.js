@@ -19,11 +19,13 @@ export function Profile({ user }) {
     ))
 
     return ( <>
+    <div className="profile-page">   
     <h1 className="create-title">Profile</h1>
     <h2 className="create-title">Handle: @{user.handle}</h2>
     <h3 className="create-title">Name: {user.first_name} {user.last_name}</h3>
     <h4 className="create-title">Contact: {user.email}</h4>
     <div>{profilePostCards}</div>
+    </div>
     </>
     )
 }
