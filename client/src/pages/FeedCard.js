@@ -1,61 +1,61 @@
-function PostCard({ post }) {
-    const { id, image, caption, likes, dislikes, user } = post
-    
-      function handleLikeClick() {
-        // const updateObj = {
-        //   likes: toy.likes + 1,
-        // };
-    
-        fetch(`/posts/${id}`, {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            likes: post.likes + 1
-          }),
-        })
-          // .then((r) => r.json())
-          // .then((updatedToy) => onUpdateToy(updatedToy));
-      }
-    
-      function handleDislikeClick() {
-        // const updateObj = {
-        //   likes: toy.likes + 1,
-        // };
-    
-        fetch(`/posts/${id}`, {
-          method: "PATCH",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            dislikes: post.dislikes + 1
-          }),
-        })
-          // .then((r) => r.json())
-          // .then((updatedToy) => onUpdateToy(updatedToy));
-      }
-    
-    
-      return (
-        <div className="card">
-          <img src={image} />
-          <h3>{caption}</h3>
-          <img src={user.avatar} />  
-          <h5>@{user.handle}</h5>    
-          <p>{likes} Likes</p>
-          <p>{dislikes} Dislikes</p>
-          <button className="like-btn" onClick={handleLikeClick}>
-          👍
-          </button>
-          
-          <button className="like-btn" onClick={handleDislikeClick}>
-          👎
-          </button>
-        </div>
-      )
-    
+function FeedCard({ post }) {
+  const { id, image, caption, likes, dislikes, user } = post
+  
+    function handleLikeClick() {
+      // const updateObj = {
+      //   likes: toy.likes + 1,
+      // };
+  
+      fetch(`/posts/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          likes: post.likes + 1
+        }),
+      })
+        // .then((r) => r.json())
+        // .then((updatedToy) => onUpdateToy(updatedToy));
     }
-    
-    export default PostCard;
+  
+    function handleDislikeClick() {
+      // const updateObj = {
+      //   likes: toy.likes + 1,
+      // };
+  
+      fetch(`/posts/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          dislikes: post.dislikes + 1
+        }),
+      })
+        // .then((r) => r.json())
+        // .then((updatedToy) => onUpdateToy(updatedToy));
+    }
+  
+  
+    return (
+      <div className="card">
+        <img src={user.avatar} className="avatar" />
+        <h5 className="userHandle">@{user.handle}</h5>    
+        <img src={image} className="postImage" />
+        <button className="like-btn" onClick={handleLikeClick}>
+        like
+        </button>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <button className="Dis-like-btn" onClick={handleDislikeClick}>
+        Dislike
+        </button>
+        <p className="likes">{likes} Likes</p>
+        <p className="disLikes">{dislikes} Dislikes</p>
+        <h3 className="caption">{user.handle} - {caption}</h3>
+      </div>
+    )
+  
+  }
+  
+  export default FeedCard;
