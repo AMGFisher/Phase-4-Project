@@ -65,7 +65,7 @@ const navigate = useNavigate()
       <button className="Dis-like-btn" onClick={handleDislikeClick}>
       Dislike
       </button>
-      <p className="likes">{likes} Likes</p>
+      <p className="likes">{likes} Likes </p>
       <p className="disLikes">{dislikes} Dislikes</p>
       <h3 className="caption">{caption}</h3>
     </div>
