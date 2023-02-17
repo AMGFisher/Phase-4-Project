@@ -8,13 +8,13 @@ class PostsController < ApplicationController
         render json: posts
     end
 
-    # def feed
+    def personal
         
-    #     feed = Post.all.where(user: @current_user)
+        feed = Post.all.where(user: @current_user)
         
-    #     render json: feed
+        render json: feed
     
-    # end
+    end
 
     def feed
         feed = Post.all.order(created_at: :desc).filter { |post| @current_user.following_ids.include?(post.user.id) }
