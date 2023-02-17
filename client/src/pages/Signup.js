@@ -29,7 +29,8 @@ export function Signup({ setUser }) {
         password_confirmation: passwordConfirmation,
         first_name: first,
         last_name: last,
-        handle
+        handle,
+        avatar: "https://i.ibb.co/fHHH095/12532-alfredhitchcock-2.jpg"
       }),
     }).then((r) => {
       if (r.ok) {
