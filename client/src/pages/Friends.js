@@ -14,7 +14,8 @@ export function Friends({user}) {
         <img src={follow.avatar} />
         <h5>{follow.handle}</h5>
         <div>{follow.first_name} {follow.last_name}</div>
-        <button>Unfollow</button>
+        <br></br>
+        <button className="logoutBtn">Unfollow</button>
         <br/>
         </container>
     ))
