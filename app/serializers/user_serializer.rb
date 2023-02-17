@@ -7,4 +7,5 @@ class UserSerializer < ActiveModel::Serializer
 
   has_many :followers
 
+
 end
