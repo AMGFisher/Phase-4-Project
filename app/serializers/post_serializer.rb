@@ -1,6 +1,10 @@
 class PostSerializer < ActiveModel::Serializer
-  attributes :id, :image, :caption, :likes, :dislikes
+  attributes :follower_id, :id, :image, :caption, :likes, :dislikes
   has_one :user
   has_many :comments
+
+  def follower_id
+  
+  end
 
 end

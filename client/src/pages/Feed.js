@@ -12,7 +12,11 @@ export function Feed({user}) {
           .then(setPosts);
       }, []);
 
-    console.log(posts)
+    const post = posts.map((post) => {
+        console.log(post.posts)
+
+    })
+
 
 
     return <h1>Personal Feed</h1>
