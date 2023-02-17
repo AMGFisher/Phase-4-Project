@@ -10,7 +10,7 @@ class PostsController < ApplicationController
 
     def personal
         
-        feed = Post.all.where(user: @current_user)
+        feed = Post.all.order(created_at: :desc).where(user: @current_user)
         
         render json: feed
     
@@ -18,6 +18,12 @@ class PostsController < ApplicationController
 
     def feed
         feed = Post.all.order(created_at: :desc).filter { |post| @current_user.following_ids.include?(post.user.id) }
+
+        render json: feed
+    end
+
+    def friend
+        feed = Post.all.order(created_at: :desc).where(user: params[:id]) 
 
         render json: feed
     end

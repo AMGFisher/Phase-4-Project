@@ -5,6 +5,7 @@ import { Inbox } from './Inbox';
 import { Login } from './Login';
 import { Profile } from './Profile';
 import { Feed } from './Feed';
+import { Friend } from './Friend';
 import { Signup } from './Signup';
 import { useEffect, useState } from 'react';
 import { NewPost } from './NewPost';
@@ -16,6 +17,7 @@ function App() {
   const navigate = useNavigate()
   
   const [user, setUser] = useState(null);
+  const [friendProfile, setFriendProfile] = useState(null);
 
   useEffect(() => {
     fetch("/me").then((r) => {
@@ -34,8 +36,6 @@ function App() {
     });
   }
 
-
-  console.log(user)
 
   return (
     <>
@@ -64,9 +64,10 @@ function App() {
       }
     </nav>
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/' element={<Home setFriendProfile={setFriendProfile} />} />
       <Route path='/newpost' element={<NewPost />} />
-      <Route path='/feed' element={<Feed user={user} />} />
+      <Route path='/feed' element={<Feed user={user} setFriendProfile={setFriendProfile} />} />
+      <Route path='/friend' element={<Friend friendProfile={friendProfile} />} />
       
       <Route path='/friends' element={<Friends user={user} />} />
       <Route path='/inbox' element={<Inbox user={user} />} />
