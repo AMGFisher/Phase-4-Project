@@ -25,16 +25,16 @@ export function Login({ setUser }) {
         <h1>Login</h1>
         <div>
         <label classname="top"
-        htmlFor="email">Email</label>
-        <input className="email"
+        htmlFor="email" className="input-caption">Email: </label>
+        <input className="input"
           type="text"
           id="email"
           autoComplete="off"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           ></input>
-        <label htmlFor="password">Password</label>
-        <input className="password"
+        <label htmlFor="password" className="input-caption" >Password: </label>
+        <input className="input"
           type="password"
           id="password"
           autoComplete="current-password"
