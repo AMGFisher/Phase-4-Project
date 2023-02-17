@@ -6,8 +6,8 @@ export function NewPost() {
     const [image, setImage] = useState("");
     const [caption, setCaption] = useState("");
 
-    console.log(image)
-    console.log(caption)
+    // console.log(image)
+    // console.log(caption)
 
 
     function handleSubmit(e) {

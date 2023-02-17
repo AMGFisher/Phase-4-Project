@@ -7,9 +7,9 @@ export function Profile({ user }) {
 
     let posts = user.posts
 
-    console.log(user)
+    // console.log(user)
 
-    console.log(user.posts)
+    // console.log(user.posts)
 
     const profilePostCards = posts.map((post) => (
         <ProfilePostCard 

@@ -12,7 +12,7 @@ export function Feed() {
           .then(setPosts);
       }, []);
 
-      console.log(posts)
+    //   console.log(posts)
 
       const feedCards = posts.map((post) => (
         <FeedCard
