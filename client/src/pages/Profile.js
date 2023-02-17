@@ -73,7 +73,7 @@ export function Profile() {
 
     <div className="profile-page">   
     <h1 className="create-title">Personal Profile</h1>
-    <img src={me.avatar} />
+    <img  className="avatar"src={me.avatar} />
     <h2 className="create-title">Handle: @{me.handle}</h2>
     <h3 className="create-title">Name: {me.first_name} {me.last_name}</h3>
     <h4 className="create-title">Contact: {me.email}</h4>

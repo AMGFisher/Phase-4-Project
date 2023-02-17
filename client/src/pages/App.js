@@ -45,7 +45,7 @@ function App() {
       <img className="logo" src='/PFSLogo.png' width="10%"/>
       {user ? <>
       <h3 className="welcome">Welcome, {user.first_name}!</h3>
-      <img src={user.avatar} />
+      <img  className="avatar"src={user.avatar} />
       <div className="taskBar">
         <button className="homeBtn"><Link className="link-text" to='/'>Home</Link></button>
         <button className="personalFeedBtn"><Link className="link-text" to='/feed'>Feed</Link></button>

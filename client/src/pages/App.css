@@ -305,9 +305,10 @@ height:50px;
 }
 
 .avatar {
-  float: left;
+  /* float: left; */
   margin-left: 75px;
   border-radius: 110px;
+  margin-bottom: 10px;
 }
 
 .userHandle {
