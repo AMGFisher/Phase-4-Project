@@ -12,6 +12,7 @@ export function Friends({user}) {
         <container className="friends">
 
         <img src={follow.avatar} />
+        <h5>{follow.handle}</h5>
         <div>{follow.first_name} {follow.last_name}</div>
         <button>Unfollow</button>
         <br/>
@@ -22,6 +23,7 @@ export function Friends({user}) {
         <container className="followers">
 
         <img src={follower.avatar} />
+        <h5>{follower.handle}</h5>
         <div>{follower.first_name} {follower.last_name}</div>
         </container>
     ))
