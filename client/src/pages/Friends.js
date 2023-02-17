@@ -1,8 +1,8 @@
 export function Friends({user}) {
 
-    console.log(user)
-    console.log(user.followers)
-    console.log(user.following)
+    // console.log(user)
+    // console.log(user.followers)
+    // console.log(user.following)
 
     let followers = user.followers
 

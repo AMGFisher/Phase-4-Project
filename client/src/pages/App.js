@@ -8,10 +8,12 @@ import { Feed } from './Feed';
 import { Signup } from './Signup';
 import { useEffect, useState } from 'react';
 import { NewPost } from './NewPost';
+import { useNavigate } from "react-router-dom";
 import './App.css';
 
 
 function App() {
+  const navigate = useNavigate()
   
   const [user, setUser] = useState(null);
 
@@ -26,7 +28,8 @@ function App() {
   function handleLogout() {
     fetch("/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
-        setUser(null);
+        navigate("/")
+        setUser(null)
       }
     });
   }
