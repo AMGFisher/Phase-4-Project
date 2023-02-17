@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import PostCard from './PostCard';
 
-export function Home() {
+export function Home({setFriendProfile}) {
 
     const [posts, setPosts] = useState([]);
 
@@ -12,12 +12,11 @@ export function Home() {
           .then(setPosts);
       }, []);
 
-      console.log(posts)
-
       const postCards = posts.map((post) => (
         <PostCard
         key={post.id}
         post={post}
+        setFriendProfile={setFriendProfile}
         />
       ))
 

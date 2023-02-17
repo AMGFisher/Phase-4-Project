@@ -1,5 +1,10 @@
-function PostCard({ post }) {
+import { useNavigate } from "react-router-dom";
+
+
+function PostCard({ post, setFriendProfile }) {
 const { id, image, caption, likes, dislikes, user } = post
+const navigate = useNavigate()
+
 
   function handleLikeClick() {
     // const updateObj = {
@@ -37,10 +42,20 @@ const { id, image, caption, likes, dislikes, user } = post
       // .then((updatedToy) => onUpdateToy(updatedToy));
   }
 
+  function userProfile() {
+    setFriendProfile(user)
+
+    navigate("/friend")
+    
+    }
+
+
+
+
 
   return (
     <div className="card">
-      <img src={user.avatar} className="avatar" />
+      <img src={user.avatar} className="avatar" onClick={userProfile}/>
       <h5 className="userHandle">@{user.handle}</h5>    
       <img src={image} className="postImage" />
       <button className="like-btn" onClick={handleLikeClick}>
