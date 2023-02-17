@@ -16,6 +16,7 @@
   background-color: #4CAF50; /* Green */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .login{
@@ -36,6 +37,7 @@
   background-color: #4CAF50; /* Green */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .signup{
@@ -56,6 +58,7 @@
   background-color: #4CAF50; /* Green */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .intro {
@@ -92,6 +95,7 @@ height:50px;
   background-color: #cb6544f5;
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .homeBtn{
@@ -100,6 +104,7 @@ height:50px;
   width: 150px;
   height: 60px;
   font-style: italic;
+  text-decoration: none;
   background-color: white;
   color: black;
   border: 3px solid #4CAF50; /* Green */
@@ -113,6 +118,7 @@ height:50px;
   background-color: #4CAF50; /* Green */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .creatPostBtn {
@@ -133,6 +139,7 @@ height:50px;
   background-color: #4CAF50; /* Green */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .personalFeedBtn {
@@ -153,12 +160,14 @@ height:50px;
   background-color: #4CAF50; /* Green */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .friendsBtn {
   margin-right: 5px;
   width: 150px;
   height: 60px;
+  color:green;
   font-style: italic;
   background-color: white;
   color: black;
@@ -173,6 +182,7 @@ height:50px;
   background-color: #4CAF50; /* Green */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .inboxBtn {
@@ -193,6 +203,7 @@ height:50px;
   background-color: #4CAF50; /* Green */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .profileBtn {
@@ -214,6 +225,7 @@ height:50px;
   background-color: #4CAF50; /* Green */
   color: white;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.50);
+  cursor: pointer;
 }
 
 .friends {
@@ -246,7 +258,7 @@ height:50px;
 
 .postCard > .card {
   margin-bottom: 0px;
-  border: 3px solid rgba(118, 115, 115, 0.852);
+  border: 3px solid #4CAF50;
   border-radius: 10px;
 }
 
@@ -296,6 +308,7 @@ height:50px;
 .like-btn:hover {
   background-color: #4CAF50; /* Green */
   color: white;
+  cursor: pointer;
 }
 
 .Dis-like-btn{
@@ -314,6 +327,7 @@ height:50px;
 .Dis-like-btn:hover {
   background-color: rgba(250, 54, 54, 0.932); /* Red */
   color: white;
+  cursor: pointer;
 }
 
 .likes {
@@ -329,4 +343,64 @@ height:50px;
   margin-right: 20px;
   font-style: italic;
   color: rgb(108, 108, 108);
+}
+
+.input {
+  text-align: center;
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #4CAF50; /* Green */
+  border-radius: 10px;
+  height: 50px;
+}
+
+.postBtn {
+  float: right;
+  margin-right: 500px;
+  margin-top: 5px;
+  width: 170px;
+  height: 52px;
+  font-style: italic;
+  background-color: white;
+  color: black;
+  border: 3px solid #4CAF50; /* Green */
+  transition-duration: 0.3s;
+  border-radius: 10px;
+  color: #4CAF50;
+  font-size: 20px;
+}
+
+.postBtn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  cursor: pointer;
+}
+
+.input-caption {
+  margin-left: 60px;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.create-title {
+  margin-left: 70px;
+  font-style: italic;
+}
+
+.inbox-title {
+  margin-left: 80px;
+  font-style: italic;
+}
+
+.link-text {
+  color:  #4CAF50;
+  text-decoration: none;
+}
+
+.link-text:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
