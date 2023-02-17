@@ -36,9 +36,8 @@ export function Signup({ setUser }) {
   return (
     <>
     <h1>Sign Up</h1>
-    <div>
+    <div classname="signup">
       <form onSubmit={handleSubmit}>
-
       <label htmlFor="email">Email: </label>
         <input
           type="text"

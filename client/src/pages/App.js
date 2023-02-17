@@ -10,7 +10,6 @@ import { useEffect, useState } from 'react';
 import { NewPost } from './NewPost';
 import './App.css';
 
-
 function App() {
   
   const [user, setUser] = useState(null);

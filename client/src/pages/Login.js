@@ -23,16 +23,18 @@ export function Login({ setUser }) {
     <div>
       <form onSubmit={handleSubmit}>
         <h1>Login</h1>
-        <label htmlFor="email">Email</label>
-        <input
+        <div>
+        <label classname="top"
+        htmlFor="email">Email</label>
+        <input className="email"
           type="text"
           id="email"
           autoComplete="off"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        />
+          ></input>
         <label htmlFor="password">Password</label>
-        <input
+        <input className="password"
           type="password"
           id="password"
           autoComplete="current-password"
@@ -40,7 +42,8 @@ export function Login({ setUser }) {
           onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit">Login</button>
-      </form>
+        </div> 
+        </form>
     </div>
   );
 }
