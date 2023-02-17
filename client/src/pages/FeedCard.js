@@ -1,5 +1,10 @@
-function FeedCard({ post }) {
+import { useNavigate } from 'react-router-dom'
+
+function FeedCard({ post, setFriendProfile}) {
   const { id, image, caption, likes, dislikes, user } = post
+
+  const navigate = useNavigate()
+
   
     function handleLikeClick() {
       // const updateObj = {
@@ -36,11 +41,18 @@ function FeedCard({ post }) {
         // .then((r) => r.json())
         // .then((updatedToy) => onUpdateToy(updatedToy));
     }
+
+    function userProfile() {
+      setFriendProfile(user)
+  
+      navigate("/friend")
+      
+      }
   
   
     return (
       <div className="card">
-        <img src={user.avatar} className="avatar" />
+        <img src={user.avatar} className="avatar" onClick={userProfile} />
         <h5 className="userHandle">@{user.handle}</h5>    
         <img src={image} className="postImage" />
         <button className="like-btn" onClick={handleLikeClick}>

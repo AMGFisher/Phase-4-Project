@@ -13,9 +13,7 @@ export function Friend({friendProfile}) {
           .then(setPosts);
       }, []);
 
-    console.log(friendProfile.id)
-
-    console.log(posts)
+    console.log(friendProfile)
 
     const profilePostCards = posts.map((post) => (
         <ProfilePostCard 
@@ -28,7 +26,9 @@ export function Friend({friendProfile}) {
 
     
     return <>
-    <h1>Friend</h1>
+    <h1>@{friendProfile.handle}</h1>
+    <img src={friendProfile.avatar} />
+    <h2>{friendProfile.first_name} {friendProfile.last_name}</h2>
     <div>{profilePostCards}</div>
     </>
 
