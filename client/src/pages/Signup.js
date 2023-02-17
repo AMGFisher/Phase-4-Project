@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 export function Signup({ setUser }) {
   const [email, setEmail] = useState("");
@@ -7,6 +9,9 @@ export function Signup({ setUser }) {
   const [first, setFirst] = useState("");
   const [last, setLast] = useState("");
   const [handle, setHandle] = useState("");
+  const navigate = useNavigate()
+
+
 
   // const [password, setPassword] = useState("");
   // const [passwordConfirmation, setPasswordConfirmation] = useState("");
@@ -29,6 +34,8 @@ export function Signup({ setUser }) {
     }).then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
+        navigate("/")
+
       }
     })
   }
