@@ -1,0 +1,28 @@
+
+.friends {
+    display: flexbox;
+    width: 500px;
+    height: 500px;
+    float:left;
+    margin:1rem;
+    padding:1rem;
+    border-style: ridge;
+    border-color: black;
+    background-color: rgb(255, 247, 196);
+    text-align: ce;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.friends img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+  
+}
+
+.top {
+  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif
+}

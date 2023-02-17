@@ -8,6 +8,7 @@ import { Feed } from './Feed';
 import { Signup } from './Signup';
 import { useEffect, useState } from 'react';
 import { NewPost } from './NewPost';
+import './App.css';
 
 function App() {
   
